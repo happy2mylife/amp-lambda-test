@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "paths": {
+    "/coin/{walletId}": {
+      "name": "/coin/{walletId}",
+      "lambdaFunction": "listCoins",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/pay": {
+      "name": "/pay",
+      "lambdaFunction": "payCoin",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    }
+  }
+}
