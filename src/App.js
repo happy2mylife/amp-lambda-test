@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import "@aws-amplify/ui-react/styles.css";
+import { get } from "aws-amplify/api";
 import { generateClient } from "aws-amplify/api";
 import { uploadData, getUrl, remove } from "aws-amplify/storage";
 import {
@@ -28,7 +29,22 @@ const App = ({ signOut }) => {
     fetchNotes();
   }, []);
 
+  async function getTodo() {
+    try {
+      const restOperation = get({
+        apiName: "kinokorestapi",
+        path: "/coin/1",
+      });
+      const response = await restOperation.response;
+      console.log("GET call succeeded: ", response);
+    } catch (e) {
+      console.log("GET call failed: ", e);
+    }
+  }
+
   async function fetchNotes() {
+    const log = await getTodo();
+    console.log(`call coin/1 = ${log}`);
     const apiData = await client.graphql({ query: listNotes });
     const notesFromAPI = apiData.data.listNotes.items;
     await Promise.all(

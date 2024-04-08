@@ -77,6 +77,40 @@
       "service": "Lambda"
     }
   },
+  "parameters": {
+    "AMPLIFY_function_listCoins_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "listCoins"
+        }
+      ]
+    },
+    "AMPLIFY_function_listCoins_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "listCoins"
+        }
+      ]
+    },
+    "AMPLIFY_function_payCoin_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "payCoin"
+        }
+      ]
+    },
+    "AMPLIFY_function_payCoin_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "payCoin"
+        }
+      ]
+    }
+  },
   "storage": {
     "kinokostrage": {
       "dependsOn": [],

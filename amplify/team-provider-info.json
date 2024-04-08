@@ -9,21 +9,29 @@
       "UnauthRoleName": "amplify-amplify83dd6b8718144-staging-b14e8-unauthRole",
       "StackName": "amplify-amplify83dd6b8718144-staging-b14e8",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:520196876033:stack/amplify-amplify83dd6b8718144-staging-b14e8/ebabdc20-f558-11ee-818e-0e9630bea38d",
-      "AmplifyAppId": "dkmw5ez8vzp6n"
+      "AmplifyAppId": "dkmw5ez8vzp6n",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify83dd6b8718144-staging-b14e8-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
         "amplambdatestbba3b2d0": {}
       },
       "api": {
-        "amplambdatest": {}
+        "amplambdatest": {},
+        "kinokorestapi": {}
       },
       "storage": {
         "kinokostrage": {}
       },
       "function": {
-        "listCoins": {},
-        "payCoin": {}
+        "listCoins": {
+          "deploymentBucketName": "amplify-amplify83dd6b8718144-staging-b14e8-deployment",
+          "s3Key": "amplify-builds/listCoins-68585232726f53366166-build.zip"
+        },
+        "payCoin": {
+          "deploymentBucketName": "amplify-amplify83dd6b8718144-staging-b14e8-deployment",
+          "s3Key": "amplify-builds/payCoin-673638386775714a4777-build.zip"
+        }
       }
     }
   }
