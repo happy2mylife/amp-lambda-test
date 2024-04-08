@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "amplambdatestbba3b2d0": {}
+      },
+      "api": {
+        "amplambdatest": {}
       }
     }
   }
