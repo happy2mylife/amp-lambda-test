@@ -1,0 +1,14 @@
+{
+  "resourceName": "kinokostrage",
+  "policyUUID": "dc426c3a",
+  "bucketName": "amplambdatestf675a8927a7246298203c314bb9a44d6",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
